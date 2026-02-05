@@ -11,16 +11,16 @@ const Hero = () => {
             Extracto KSM-66 Premium • 100% Natural
           </span>
           
-          <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl mb-6 leading-tight text-[#3A5A40]">
+          <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl mb-6 leading-tight text-[#3A5A40] text-center md:text-left">
             Adiós al Estrés.<br/>
             <span className="text-[#E76F51] italic">Hola Energía.</span>
           </h1>
           
-          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-lg">
+          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-lg text-center md:text-left mx-auto md:mx-0">
             La fórmula científica que reduce el cortisol, mejora tu sueño profundo y te devuelve la vitalidad que perdiste.
           </p>
 
-          <div className="flex flex-col items-center md:items-start gap-6">
+          <div className="flex flex-col items-center md:items-start gap-4 mb-10 w-full">
             <a 
               href="#pricing" 
               className="bg-[#E76F51] text-white px-8 py-4 rounded-full font-bold text-xl md:text-2xl shadow-xl hover:scale-105 transition-all w-full sm:w-auto text-center"
@@ -37,7 +37,7 @@ const Hero = () => {
            </div>
 
           {/* Prueba Social */}
-          <div className="flex items-center gap-4 bg-white/50 p-4 rounded-2xl w-max border border-[#3A5A40]/10">
+          <div className="flex items-center gap-4 bg-white/50 p-4 rounded-2xl w-max border border-[#3A5A40]/10 mx-auto md:mx-0">
             <div className="flex text-yellow-500 text-4xl tracking-tighter">
               ★★★★★
             </div>
