@@ -11,12 +11,12 @@ const Hero = () => {
             Extracto KSM-66 Premium • 100% Natural
           </span>
           
-          <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl text-[#3A5A40] leading-[1.05] mb-8 font-bold">
+          <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl text-[#3A5A40] leading-[1.05] mb-8 font-bold">
             Adiós al Estrés.<br/>
             <span className="text-[#E76F51] italic">Hola Energía.</span>
           </h1>
           
-          <p className="text-2xl text-gray-600 mb-10 leading-relaxed max-w-xl">
+          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-xl">
             La fórmula científica que reduce el cortisol, mejora tu sueño profundo y te devuelve la vitalidad que perdiste.
           </p>
 
