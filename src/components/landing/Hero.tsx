@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         
         {/* Lado Izquierdo: Texto */}
-        <div className="z-10">
+        <div className="z-10 flex flex-col items-center md:items-start">
           <span className="text-[#E76F51] font-bold tracking-wider text-lg mb-6 block uppercase">
             Extracto KSM-66 Premium • 100% Natural
           </span>
@@ -16,7 +16,7 @@ const Hero = () => {
             <span className="text-[#E76F51] italic">Hola Energía.</span>
           </h1>
           
-          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-lg">
+          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-lg mx-auto md:mx-0 text-center md:text-left">
             La fórmula científica que reduce el cortisol, mejora tu sueño profundo y te devuelve la vitalidad que perdiste.
           </p>
 
@@ -28,9 +28,9 @@ const Hero = () => {
               ¡Recuperar mi Energía!
             </a>
             
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center md:items-start mb-6">
               <span className="text-[#3A5A40] font-bold text-2xl">
-                Desde <span className="text-4xl text-[#E76F51]">$69.900</span>
+                Desde <span className="text-3xl text-[#E76F51]">$69.900</span>
               </span>
               <span className="text-sm text-gray-500 font-medium">Envío Gratis Nacional</span>
             </div>
