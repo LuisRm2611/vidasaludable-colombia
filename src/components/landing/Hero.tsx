@@ -16,11 +16,11 @@ const Hero = () => {
             <span className="text-[#E76F51] italic">Hola Energía.</span>
           </h1>
           
-          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-xl">
+          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-lg">
             La fórmula científica que reduce el cortisol, mejora tu sueño profundo y te devuelve la vitalidad que perdiste.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center mb-12">
+          <div className="flex justify-center md:justify-start">
             <a 
               href="#pricing" 
               className="bg-[#E76F51] text-white px-10 py-5 rounded-full font-bold text-2xl shadow-xl hover:scale-105 transition-all w-full sm:w-auto text-center"
