@@ -3,13 +3,13 @@ import React from 'react';
 const Hero = () => {
   return (
            
-    <section className="relative pt-20 md:pt-40 pb-20 px-4 md:px-6 overflow-hidden bg-[#F9F7F2]">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-16 items-center justify-     items-center md:justify-items-start">
+    <section className="relative pt-32 md:pt-48 pb-20 px-4 md:px-6 overflow-hidden bg-[#F9F7F2]">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-16 items-center">
 
 
         {/* Lado Izquierdo: Texto */}
         <div className="z-10 flex flex-col items-center md:items-start text-center md:text-left w-full">
-          <span className="text-[#E76F51] font-bold tracking-wider text-lg mb-6 block uppercase">
+          <span className="text-[#E76F51] font-bold tracking-wider text-lg mb-4 mt-2 block uppercase">
             Extracto KSM-66 Premium • 100% Natural
           </span>
           
