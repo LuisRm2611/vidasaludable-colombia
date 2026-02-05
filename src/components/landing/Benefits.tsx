@@ -28,7 +28,7 @@ const benefits = [
 ];
 const Benefits = () => {
   return (
-    <section id="Benefits" className="py-20 lg:py-32 bg-background">
+    <section id="beneficios" className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-sage-light text-sage rounded-full text-sm font-medium mb-4">
