@@ -6,35 +6,35 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         
         {/* Lado Izquierdo: Texto */}
-        <div className="z-10 flex flex-col items-center md:items-start">
+        <div className="z-10 flex flex-col items-center md:items-start text-center md:text-left">
           <span className="text-[#E76F51] font-bold tracking-wider text-lg mb-6 block uppercase">
             Extracto KSM-66 Premium • 100% Natural
           </span>
           
-          <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl text-[#3A5A40] leading-[1.05] mb-8 font-bold">
+          <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl mb-6 leading-tight text-[#3A5A40]">
             Adiós al Estrés.<br/>
             <span className="text-[#E76F51] italic">Hola Energía.</span>
           </h1>
           
-          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-lg mx-auto md:mx-0 text-center md:text-left">
+          <p className="text-lg md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-lg">
             La fórmula científica que reduce el cortisol, mejora tu sueño profundo y te devuelve la vitalidad que perdiste.
           </p>
 
-          <div className="flex justify-center md:justify-start">
+          <div className="flex flex-col items-center md:items-start gap-6">
             <a 
               href="#pricing" 
-              className="bg-[#E76F51] text-white px-10 py-5 rounded-full font-bold text-2xl shadow-xl hover:scale-105 transition-all w-full sm:w-auto text-center"
+              className="bg-[#E76F51] text-white px-8 py-4 rounded-full font-bold text-xl md:text-2xl shadow-xl hover:scale-105 transition-all w-full sm:w-auto text-center"
             >
               ¡Recuperar mi Energía!
             </a>
             
-            <div className="flex flex-col items-center md:items-start mb-6">
-              <span className="text-[#3A5A40] font-bold text-2xl">
-                Desde <span className="text-3xl text-[#E76F51]">$69.900</span>
-              </span>
-              <span className="text-sm text-gray-500 font-medium">Envío Gratis Nacional</span>
-            </div>
-          </div>
+            <div className="flex flex-col items-center md:items-start mb-6 w-full">
+            <span className="text-[#3A5A40] font-bold text-xl md:text-2xl">
+                Desde <span className="text-2xl md:text-3xl text-[#E76F51]">$69.900</span>
+           </span>
+              <span className="text-xs md:text-sm text-gray-500 font-medium">Envío Gratis Nacional</span>
+             </div>
+           </div>
 
           {/* Prueba Social */}
           <div className="flex items-center gap-4 bg-white/50 p-4 rounded-2xl w-max border border-[#3A5A40]/10">
