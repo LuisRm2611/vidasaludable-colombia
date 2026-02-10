@@ -140,3 +140,18 @@ All colors MUST be HSL.
     box-shadow: 0 0 20px 5px hsl(12 75% 61% / 0.2);
   }
 }
+/* Animación personalizada de salto suave */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-12px); /* Altura del salto */
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s infinite; /* Se repite cada 2 segundos */
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AlertCircle, Sparkles, ShieldCheck, Zap, Moon, Brain } from 'lucide-react';
 
-const ScienceSimple = () => {
+const ScienceSimple = ({ onOpenCheckout }) => { // <--- DEBE tener estas llaves { }
   return (
     <section className="py-24 px-6 bg-[#F9F7F2]">
       <div className="max-w-7xl mx-auto">
@@ -83,6 +83,21 @@ const ScienceSimple = () => {
         </div>
 
       </div>
+      {/* Los 4 iconos: Enfoque, Sueño, Vitalidad, Calma */}
+<div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+  {/* Tus iconos actuales aquí... */}
+</div>
+
+{/* EL BOTÓN CORREGIDO (Sin propiedades incompatibles) */}
+{/* BOTÓN CON SALTO CONSTANTE */}
+<div className="mt-12 flex justify-center">
+  <button 
+    onClick={onOpenCheckout}
+    className="bg-[#3A5A40] text-white font-black py-5 px-12 rounded-full text-2xl shadow-2xl hover:bg-[#2d4632] transition-all hover:scale-110 animate-bounce-slow"
+  >
+    🛒 PEDIR AHORA POR WHATSAPP
+  </button>
+</div>
     </section>
   );
 };

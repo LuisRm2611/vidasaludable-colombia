@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckCircle2, Moon, Brain, Zap, Shield } from 'lucide-react';
 
-const IdealFor = () => {
+const IdealFor = ({ onOpenCheckout }) => { // <--- Solo añade esto entre los paréntesis
   const points = [
     "No logran dormir profundo",
     "Se levantan cansadas aunque duerman varias horas",
@@ -73,6 +73,16 @@ const IdealFor = () => {
         </div>
 
       </div>
+      {/* Tu grid actual termina aquí */}
+      {/* BOTÓN CON SALTO CONSTANTE */}
+<div className="mt-12 flex justify-center">
+  <button 
+    onClick={onOpenCheckout}
+    className="bg-[#E76F51] text-white font-black py-5 px-12 rounded-2xl text-2xl shadow-2xl transition-all hover:scale-110 animate-bounce-slow"
+  >
+    🚀 QUIERO EMPEZAR MI CAMBIO HOY
+  </button>
+</div>
     </section>
   );
 };

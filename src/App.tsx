@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // 1. Header
 import Header from './components/layout/Header'; 
@@ -15,9 +15,10 @@ import FAQ from './components/landing/FAQ';
 import Pricing from './components/landing/Pricing';
 import VisualTransformation from './components/landing/VisualTransformation';
 import LifestyleHero from './components/landing/LifestyleHero';
-import WhatsAppButton from './components/landing/WhatsAppButton'; 
-
+import WhatsAppButton from './components/landing/WhatsAppButton';
+import CheckoutSystem from './components/landing/CheckoutSystem';
 function App() {
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   return (
     <div className="min-h-screen bg-[#F9F7F2]">
       <Header />
@@ -28,11 +29,10 @@ function App() {
         
         <VisualTransformation />
         
-        <IdealFor />
-        <ScienceSimple />
+        <IdealFor onOpenCheckout={() => setIsCheckoutOpen(true)} />
+        <ScienceSimple onOpenCheckout={() => setIsCheckoutOpen(true)} />       
         
-        <LifestyleHero />
-        
+        <LifestyleHero />        
         <QuickGuide />
         <FAQ />
         <Pricing />
@@ -44,7 +44,12 @@ function App() {
       <Footer />
       
       <WhatsAppButton />
-    </div>
+    {/* COMPONENTE DE CIERRE: Aquí es donde se agrega el modal */}
+    <CheckoutSystem 
+        isOpen={isCheckoutOpen} 
+        onClose={() => setIsCheckoutOpen(false)} 
+      />
+    </div> // Este es el cierre del <div className="min-h-screen...">
   );
 }
 

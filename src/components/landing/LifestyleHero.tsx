@@ -1,11 +1,12 @@
 import React from 'react';
 
 const LifestyleHero = () => {
+  
   return (
     <section className="pt-8 pb-24 px-6 bg-[#F9F7F2]">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h1 className="text-5xl md:text-8xl font-serif font-bold text-[#3A5A40] tracking-tighter mb-8 leading-none">
-          Tu transformación <br /> <span className="text-[#E76F51]">empieza hoy</span>.
+        Tu transformación <br /> <span className="text-[#E76F51]">empieza hoy</span>.
         </h1>
       </div>
 
